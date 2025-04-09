@@ -9,13 +9,10 @@
 </head>
 <body>
     <div class="body-container">
-        <!-- <div class="loader-container">
-            <div class="loader"></div>
-        </div> -->
         <nav class="main-nav">
             <div class="nav-left">
                 <h1 class="title">NEONIX</h1>
-                <ul>
+                <ul class="main-ul">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
@@ -26,24 +23,26 @@
             <div class="nav-right">
                 <ul>
                     <li><button>Menu</button></li>
-                    <li><img src="./assets/Ellipse 70.svg" alt="Ellipse"></li>
+                    <li><ion-icon name="ellipsis-horizontal"></ion-icon></li>
                 </ul>
-                <img src="./assets/hamburger.svg" alt="hamburger">
+                <img id="menu" src="./assets/hamburger.svg" alt="hamburger">
             </div>
         </nav>
 
         <nav class="mobile-nav">
-            <div class="mobile-nav-top">
-                <h1 class="title">NEONIX</h1>
-                <ion-icon name="close-outline"></ion-icon>
-            </div> 
-            <div class="mobile-nav-bottom">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Clients</a></li>
-                </ul>
+            <div class="mobile-nav-container">
+                <div class="mobile-nav-top">
+                    <h1 class="title">NEONIX</h1>
+                    <img src="./assets/close.svg" id="close-btn" alt="close-btn">
+                </div>
+                <div class="mobile-nav-bottom">
+                    <ul class="mobile-ul">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Clients</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -55,7 +54,7 @@
                     <p>We Innovate. We Secure. We Transform. Step into the future with our cutting-edge solutions.</p>
 
                     <div class="hero-cta">
-                        <button class="discover">Discover <span><img src="./assets/Ellipse 70.svg" alt="Ellipse"></span></button>
+                        <a class="discover" href="#">Discover <ion-icon name="ellipsis-horizontal"></ion-icon></a>
 
                         <div class="connect">
                             <img class="discord" src="./assets/ic_baseline-discord.svg" alt="discord icon">
@@ -65,7 +64,7 @@
                 </div>
 
                 <div class="image-container">
-                    <img class="hero-image" src="./assets/download (1) 3.png" alt="hero image">
+                    <img class="hero-image" src="./assets/mobile hero image.svg" alt="hero image">
                 </div>
             </div>
         </section>
@@ -73,7 +72,7 @@
         <section class="about-us">
             <div class="about-us-container">
                 <div class="first-col">
-                    <img src="./assets/Frame 1029.svg" alt="play button">
+                    <ion-icon name="caret-forward-sharp"></ion-icon>
                     <p>PLAY TRAILER</p>
                 </div>
 
@@ -105,9 +104,6 @@
                 </div>
             </div>
         </section>
-        <!-- <ion-icon name="ellipsis-horizontal"></ion-icon> -->
-        <!-- <ion-icon name="caret-forward-sharp"></ion-icon> -->
-        <!-- <ion-icon name="logo-discord"></ion-icon> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
