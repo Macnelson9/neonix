@@ -47,6 +47,11 @@ timeline.from('.main-nav', {
     y: -20,
     stagger: 0.2,
     ease: 'power2.out'
+}, '-=0.5').from('.about-us', {  
+    duration: 1.5,
+    y: '100%',
+    ease: 'elastic.out(1, 0.3)',
+    opacity: 0
 }, '-=0.5').from('.image-container', {
     duration: 2,
     x: '120%',
@@ -57,9 +62,4 @@ timeline.from('.main-nav', {
     x: -50,
     duration: 1.2,
     ease: 'back.out(1.7)'
-}, '-=1.5').from('.about-us', {
-    duration: 1.5,
-    y: '100%',
-    ease: 'elastic.out(1, 0.3)',
-    opacity: 0
-}, '-=1')
+}, '-=1.5')
